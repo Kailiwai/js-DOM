@@ -5,14 +5,14 @@
 Find the div with the id of "name1" and replace the n/a with the following:
 
 Tay-Tay*/
-
+document.getElementById("name1").innerHTML = "Tay-Tay";
 
 /*2. DJ Khaled
 
 Find the div with the id of "position2" and replace the n/a with the following: 
 
 Project Manager*/
-
+document.getElementById("position2").innerHTML = "Project Manager";
 
 /*3. Piko Taro
 
@@ -20,26 +20,30 @@ Find the div with the id of "alias3" and replace the n/a with the following:
 
 Concatenation*/
 
-
+document.getElementById("alias3").innerHTML = "Concatenation";
 
 
 /*4. Prince
 
 Find the div with the class name of "profile" and replace the n/a with a verse from your favorite Prince song.*/
 
-
+var positionList =
+document.getElementsByClassName("profile");
+positionList[0].innerHTML = "Purple Rain";
 
 /*5. Bruce Lee
 
 Find the div with the class name of "profile" and replace the n/a with a quote from the legend himself.*/
 
-
+var positionList2 = document.getElementsByClassName("profile");
+positionList[1].innerHTML = "Be Water";
 
 /*6. Samuel L Jackson
 
 Find the div with the class name of "alias" and replace the n/a with your favorite character that Sammy portrayed.*/
 
-
+var aliasForSamuelJackson = document.getElementsByClassName("alias");
+aliasForSamuelJackson[2].innerHTML = "Jules Winnfield";
 
 /*7. Peter Griffin
 
@@ -47,6 +51,8 @@ Create a div element and give it an id of "name7". Inside this div element, give
 
 Append this div element to the nameParent div*/
 
+/*
+document.createElement(<div id = 'name7'>Peter Griffin</div>);
 
  
 /*8. Tim Duncan
